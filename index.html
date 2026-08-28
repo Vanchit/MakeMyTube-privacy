@@ -10,18 +10,23 @@
 
   <meta
     name="description"
-    content="Privacy Policy for the EngineerTube Chrome Extension."
+    content="Privacy Policy for the MakeMyTube Chrome Extension."
   />
 
-  <title>EngineerTube Privacy Policy</title>
+  <title>MakeMyTube Privacy Policy</title>
 
   <style>
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
+
       font-family:
         Inter,
         -apple-system,
@@ -30,23 +35,43 @@
         Roboto,
         Arial,
         sans-serif;
-      background: #07111f;
+
+      background:
+        radial-gradient(
+          circle at 50% -10%,
+          rgba(0, 174, 255, 0.1),
+          transparent 30%
+        ),
+        #050d1a;
+
       color: #dce8f8;
       line-height: 1.7;
     }
 
+    a {
+      color: #66cfff;
+      word-break: break-word;
+    }
+
     .page {
-      width: min(900px, calc(100% - 32px));
+      width: min(920px, calc(100% - 32px));
       margin: 0 auto;
       padding: 48px 0 80px;
     }
 
     .header {
       margin-bottom: 32px;
-      padding: 32px;
+      padding: 34px;
+
       border: 1px solid #233f65;
       border-radius: 18px;
+
       background:
+        radial-gradient(
+          circle at 10% 0%,
+          rgba(0, 183, 255, 0.11),
+          transparent 32%
+        ),
         linear-gradient(
           145deg,
           #102544,
@@ -62,27 +87,66 @@
     }
 
     .logo {
-      display: grid;
-      width: 52px;
-      height: 52px;
-      place-items: center;
+      width: 54px;
+      height: 54px;
+
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      gap: 4px;
+
+      padding: 10px 8px;
+
       border-radius: 14px;
+
+      background: #06152c;
+
+      border: 1px solid #145487;
+
+      box-shadow:
+        0 0 24px rgba(0, 178, 255, 0.2);
+    }
+
+    .logo-bar {
+      width: 8px;
+
+      border-radius: 10px;
+
       background:
         linear-gradient(
-          135deg,
-          #3578f6,
-          #7648e8
+          180deg,
+          #29f3ee,
+          #0396ff,
+          #2251ff
         );
-      color: white;
-      font-size: 22px;
-      font-weight: 800;
+
+      box-shadow:
+        0 0 8px rgba(0, 210, 255, 0.55);
+    }
+
+    .logo-bar:nth-child(1) {
+      height: 24px;
+    }
+
+    .logo-bar:nth-child(2) {
+      height: 34px;
+    }
+
+    .logo-bar:nth-child(3) {
+      height: 26px;
     }
 
     h1 {
       margin: 0;
+
       color: #ffffff;
+
       font-size: 32px;
+
       line-height: 1.2;
+
+      letter-spacing: -0.025em;
     }
 
     .subtitle {
@@ -92,31 +156,51 @@
 
     .updated {
       display: inline-block;
+
       margin-top: 14px;
+
       padding: 6px 10px;
+
       border-radius: 999px;
-      background: rgba(66, 133, 244, 0.12);
-      color: #8ab6ff;
+
+      background:
+        rgba(44, 162, 255, 0.11);
+
+      color: #86cfff;
+
       font-size: 13px;
     }
 
     section {
       margin-top: 22px;
+
       padding: 28px;
+
       border: 1px solid #1d385c;
+
       border-radius: 16px;
-      background: #0b192c;
+
+      background:
+        linear-gradient(
+          145deg,
+          #0b192c,
+          #081526
+        );
     }
 
     h2 {
       margin-top: 0;
+
       color: #ffffff;
+
       font-size: 21px;
     }
 
     h3 {
       margin-top: 25px;
+
       color: #c9ddfa;
+
       font-size: 17px;
     }
 
@@ -137,70 +221,110 @@
       color: #edf5ff;
     }
 
-    a {
-      color: #75aaff;
-      word-break: break-word;
-    }
-
     .notice {
       padding: 16px;
-      border-left: 4px solid #4f8cff;
+
+      border-left: 4px solid #42a5ff;
+
       border-radius: 8px;
-      background: rgba(79, 140, 255, 0.08);
+
+      background:
+        rgba(79, 140, 255, 0.08);
     }
 
     .contact {
       padding: 18px;
+
       border-radius: 12px;
+
       background: #071322;
     }
 
     footer {
       margin-top: 32px;
+
       color: #7f95b2;
+
       font-size: 13px;
+
       text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding-top: 20px;
+      }
+
+      .header,
+      section {
+        padding: 22px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <main class="page">
+
+
+    <!-- HEADER -->
 
     <header class="header">
 
       <div class="brand">
 
         <div class="logo">
-          &lt;/&gt;
+          <span class="logo-bar"></span>
+          <span class="logo-bar"></span>
+          <span class="logo-bar"></span>
         </div>
 
         <div>
+
           <h1>
-            EngineerTube Privacy Policy
+            MakeMyTube Privacy Policy
           </h1>
 
           <p class="subtitle">
-            Privacy information for the EngineerTube Chrome Extension.
+            Privacy information for the MakeMyTube Chrome Extension.
           </p>
+
         </div>
 
       </div>
 
+
       <p>
-        EngineerTube is a Chrome extension designed to turn YouTube
-        into a more focused learning and productivity environment.
-        This Privacy Policy explains what information EngineerTube
-        accesses, how it is used, where it is stored, and the choices
-        available to users.
+        MakeMyTube is a Chrome extension that gives users more control
+        over their YouTube experience. It can help shape recommendations,
+        reduce unwanted topics, prioritize selected creators, save videos,
+        create notes, track activity, and provide optional productivity
+        and distraction-control features.
       </p>
 
+      <p>
+        This Privacy Policy explains what information MakeMyTube accesses,
+        how that information is used, where it may be stored, which
+        third-party services are involved, and the choices available to
+        users.
+      </p>
+
+
       <span class="updated">
-        Last updated: August 22, 2026
+        Last updated: August 28, 2026
       </span>
 
     </header>
 
+
+
+    <!-- 1 -->
 
     <section>
 
@@ -209,9 +333,9 @@
       </h2>
 
       <p>
-        EngineerTube accesses only the information needed to provide
-        its learning, productivity, authentication, and subscription
-        features.
+        MakeMyTube accesses and processes information only when it is
+        needed to provide extension functionality, authentication,
+        personalization, productivity tools, or subscription services.
       </p>
 
 
@@ -220,9 +344,9 @@
       </h3>
 
       <p>
-        When you choose to sign in with Google, EngineerTube may
-        receive basic account information provided through Google
-        OAuth, including:
+        When you choose to sign in with Google, MakeMyTube may receive
+        basic account information provided through Google OAuth,
+        including:
       </p>
 
       <ul>
@@ -233,26 +357,29 @@
       </ul>
 
       <p>
-        EngineerTube requests only the basic Google identity scopes:
-        <strong>openid</strong>, <strong>email</strong>, and
+        MakeMyTube requests only the basic Google identity scopes:
+        <strong>openid</strong>,
+        <strong>email</strong>,
+        and
         <strong>profile</strong>.
       </p>
 
       <p>
-        Google account information is used to authenticate you,
-        associate your account with your EngineerTube subscription,
-        and display your signed-in account inside the extension.
+        This information is used to authenticate you, display your
+        signed-in account, and associate your account with MakeMyTube Pro
+        subscription access when applicable.
       </p>
 
 
       <h3>
-        YouTube and Learning Activity
+        YouTube Page and Activity Information
       </h3>
 
       <p>
-        EngineerTube processes information from YouTube pages so that
-        features such as Focus Mode, filtering, progress tracking,
-        saved videos, notes, and distraction controls can function.
+        MakeMyTube processes information available on YouTube pages so
+        that features such as recommendation filtering, saved videos,
+        notes, progress tracking, trusted channels, and interface controls
+        can function.
       </p>
 
       <p>
@@ -260,184 +387,258 @@
       </p>
 
       <ul>
-        <li>Video titles and video identifiers.</li>
+        <li>Video titles.</li>
+        <li>Video identifiers.</li>
         <li>Channel names.</li>
         <li>Video URLs.</li>
-        <li>Video duration and playback progress.</li>
+        <li>Video duration.</li>
+        <li>Playback progress.</li>
         <li>Watch time.</li>
         <li>Focus Mode and Normal Mode activity.</li>
         <li>Saved videos.</li>
-        <li>Timestamped learning notes created by you.</li>
-        <li>Study tags and blocked tags.</li>
-        <li>Trusted channel preferences.</li>
+        <li>Timestamped notes created by you.</li>
+        <li>Interest or study tags.</li>
+        <li>Blocked tags.</li>
+        <li>Trusted-channel preferences.</li>
         <li>Pomodoro session information.</li>
-        <li>Learning progress and productivity statistics.</li>
-        <li>Interactions required to operate EngineerTube features.</li>
+        <li>Progress and productivity statistics.</li>
+        <li>
+          Interactions required to operate MakeMyTube features.
+        </li>
       </ul>
 
       <p>
-        This information is used only to provide EngineerTube's
-        learning and productivity functionality.
+        This information is used only for MakeMyTube functionality and
+        personalization.
       </p>
 
     </section>
 
 
+
+    <!-- 2 -->
+
     <section>
 
       <h2>
-        2. Information Stored Locally
+        2. Information Stored in Browser Storage
       </h2>
 
       <p>
-        A significant portion of EngineerTube's learning data and
-        preferences is stored locally using Chrome extension storage.
+        A significant portion of MakeMyTube preferences and activity data
+        is stored using Chrome extension storage.
       </p>
 
       <p>
-        Local data may include:
+        This may include:
       </p>
 
       <ul>
-        <li>EngineerTube settings.</li>
-        <li>Focus Mode preferences.</li>
-        <li>Study tags.</li>
+        <li>MakeMyTube settings.</li>
+        <li>Recommendation mode preferences.</li>
+        <li>Interest or study tags.</li>
         <li>Blocked tags.</li>
         <li>Trusted channels.</li>
-        <li>Saved learning videos.</li>
+        <li>Saved videos.</li>
         <li>Timestamped notes.</li>
         <li>Pomodoro settings and statistics.</li>
         <li>Watch-time statistics.</li>
         <li>Progress information.</li>
-        <li>Recommendation-learning preferences.</li>
-        <li>Subscription status cached for the extension interface.</li>
+        <li>Recommendation preferences.</li>
+        <li>
+          Subscription status cached for the extension interface.
+        </li>
       </ul>
 
       <p>
-        This data is used to remember your preferences and maintain
-        your EngineerTube experience across browser sessions.
+        This information helps MakeMyTube remember your preferences and
+        maintain your experience across browser sessions.
       </p>
 
     </section>
 
 
+
+    <!-- 3 -->
+
     <section>
 
       <h2>
-        3. EngineerTube Backend
+        3. Local Import and Export
       </h2>
 
       <p>
-        EngineerTube uses a secure backend hosted using
-        <strong>Cloudflare Workers</strong> and related Cloudflare
-        services for account authentication and subscription
-        management.
+        MakeMyTube may allow you to manually export certain supported
+        information, such as saved-video records or progress information,
+        into a file stored on your device.
       </p>
 
       <p>
-        The backend may store information such as:
+        You may later import a compatible MakeMyTube backup file to
+        restore supported information after reinstalling the extension or
+        moving to another supported browser environment.
+      </p>
+
+      <div class="notice">
+
+        <strong>
+          Exported backup files are created only when you choose to export
+          them.
+        </strong>
+
+        MakeMyTube does not automatically upload those exported files to
+        a cloud storage service.
+
+      </div>
+
+      <p>
+        You are responsible for protecting any backup files that you
+        create and store locally.
+      </p>
+
+    </section>
+
+
+
+    <!-- 4 -->
+
+    <section>
+
+      <h2>
+        4. MakeMyTube Backend
+      </h2>
+
+      <p>
+        MakeMyTube uses backend infrastructure hosted using
+        <strong>Cloudflare Workers</strong>
+        and related Cloudflare services for authentication and
+        subscription management.
+      </p>
+
+      <p>
+        The backend may process or store information such as:
       </p>
 
       <ul>
         <li>Your Google account identifier.</li>
         <li>Your email address.</li>
         <li>Your name.</li>
-        <li>Your profile picture URL.</li>
-        <li>Your EngineerTube subscription plan.</li>
+        <li>Your profile picture URL, when available.</li>
+        <li>Your MakeMyTube subscription plan.</li>
         <li>Your subscription status.</li>
-        <li>Your subscription start and expiry information.</li>
+        <li>Your subscription start information.</li>
+        <li>Your subscription expiry information.</li>
         <li>Razorpay subscription identifiers.</li>
-        <li>Payment event identifiers required to process subscription events.</li>
+        <li>
+          Payment or subscription event identifiers needed to manage
+          subscription events.
+        </li>
       </ul>
 
       <p>
-        This information is used only to authenticate users and manage
-        EngineerTube account and subscription access.
+        This information is used to authenticate users and manage
+        MakeMyTube account and subscription access.
       </p>
 
     </section>
 
 
+
+    <!-- 5 -->
+
     <section>
 
       <h2>
-        4. Payments and Razorpay
+        5. Payments and Razorpay
       </h2>
 
       <p>
-        EngineerTube Pro subscriptions are processed using
+        MakeMyTube Pro subscriptions are processed using
         <strong>Razorpay</strong>.
       </p>
 
       <p>
-        When you choose to purchase EngineerTube Pro, you are
-        redirected to Razorpay's secure payment interface.
+        When you choose to purchase MakeMyTube Pro, you may be redirected
+        to Razorpay's payment interface.
       </p>
+
 
       <div class="notice">
 
         <strong>
-          EngineerTube does not directly collect or store your credit
-          card number, debit card number, UPI PIN, CVV, banking
-          password, or other sensitive payment credentials.
+          MakeMyTube does not directly collect or store your credit card
+          number, debit card number, UPI PIN, CVV, banking password, or
+          similar sensitive payment credentials.
         </strong>
 
       </div>
 
+
       <p>
         Razorpay processes payment information according to its own
-        privacy and security policies.
+        privacy and security practices.
       </p>
 
       <p>
-        EngineerTube receives only the information necessary to
-        determine subscription status, such as a Razorpay subscription
-        identifier, payment/subscription status, and billing period
-        information.
+        MakeMyTube receives only information needed to determine and
+        maintain subscription status, which may include Razorpay
+        subscription identifiers, payment or subscription status, and
+        billing-period information.
       </p>
 
     </section>
 
 
+
+    <!-- 6 -->
+
     <section>
 
       <h2>
-        5. Google Sign-In
+        6. Google Sign-In
       </h2>
 
       <p>
-        EngineerTube uses Google OAuth for authentication.
+        MakeMyTube uses Google OAuth for authentication.
       </p>
 
       <p>
-        Google Sign-In is used only to:
+        Google Sign-In is used to:
       </p>
 
       <ul>
         <li>Verify your identity.</li>
-        <li>Create or identify your EngineerTube account.</li>
-        <li>Display basic account information inside the extension.</li>
-        <li>Associate your account with EngineerTube Pro access.</li>
+        <li>Create or identify your MakeMyTube account.</li>
+        <li>
+          Display basic account information inside the extension.
+        </li>
+        <li>
+          Associate your account with MakeMyTube Pro access when
+          applicable.
+        </li>
       </ul>
 
       <p>
-        EngineerTube does not request access to Gmail, Google Drive,
-        Google Calendar, Google Contacts, or other Google account
-        content.
+        MakeMyTube does not request access to Gmail, Google Drive,
+        Google Calendar, Google Contacts, or other unrelated Google
+        account content.
       </p>
 
     </section>
 
 
+
+    <!-- 7 -->
+
     <section>
 
       <h2>
-        6. Chrome Extension Permissions
+        7. Chrome Extension Permissions
       </h2>
 
       <p>
-        EngineerTube requests Chrome permissions only when they are
-        needed to provide its features.
+        MakeMyTube requests Chrome permissions needed to provide its
+        extension functionality.
       </p>
 
 
@@ -446,9 +647,9 @@
       </h3>
 
       <p>
-        Used to save EngineerTube preferences, study settings,
-        learning progress, saved videos, notes, Pomodoro information,
-        and account/subscription state.
+        Used to save MakeMyTube preferences, selected tags, saved videos,
+        notes, progress information, Pomodoro data, and account or
+        subscription state.
       </p>
 
 
@@ -457,8 +658,7 @@
       </h3>
 
       <p>
-        Used to provide Google Sign-In and authenticate your
-        EngineerTube account.
+        Used to support Google Sign-In and authentication.
       </p>
 
 
@@ -467,7 +667,7 @@
       </h3>
 
       <p>
-        Used to support Pomodoro study and break timers even when the
+        Used to support Pomodoro focus and break timers even when the
         extension popup is closed.
       </p>
 
@@ -477,9 +677,8 @@
       </h3>
 
       <p>
-        Used for EngineerTube's optional advertisement and
-        distraction-reduction functionality through a limited,
-        packaged browser ruleset.
+        Used for MakeMyTube's optional advertisement-reduction
+        functionality through packaged browser rules.
       </p>
 
 
@@ -488,190 +687,232 @@
       </h3>
 
       <p>
-        EngineerTube needs access to YouTube pages so it can provide
-        Focus Mode, educational filtering, interface customization,
-        saved-video tools, progress tracking, distraction controls,
-        and other learning features.
+        MakeMyTube needs access to YouTube pages so that it can provide
+        recommendation filtering, interface customization, saved-video
+        tools, notes, progress tracking, trusted-channel features,
+        distraction controls, and related functionality.
       </p>
 
 
       <h3>
-        EngineerTube API Access
+        MakeMyTube Backend Access
       </h3>
 
       <p>
-        Access to the EngineerTube backend is required for Google
-        authentication and subscription management.
+        Access to the MakeMyTube backend is used for authentication and
+        subscription management.
       </p>
 
     </section>
 
 
+
+    <!-- 8 -->
+
     <section>
 
       <h2>
-        7. How We Use Information
+        8. How We Use Information
       </h2>
 
       <p>
-        Information accessed by EngineerTube is used only for purposes
-        related to the extension's functionality, including:
+        Information accessed by MakeMyTube is used only for purposes
+        connected to extension functionality, including:
       </p>
 
       <ul>
         <li>Authenticating users.</li>
-        <li>Providing Focus Mode.</li>
-        <li>Filtering educational content.</li>
+        <li>Providing recommendation modes.</li>
+        <li>Filtering content according to user-selected preferences.</li>
+        <li>Applying blocked tags.</li>
+        <li>Prioritizing trusted channels.</li>
         <li>Saving user preferences.</li>
-        <li>Providing saved-video and note functionality.</li>
-        <li>Tracking learning and productivity progress.</li>
+        <li>Providing saved-video functionality.</li>
+        <li>Providing timestamped notes.</li>
+        <li>Tracking supported progress and usage information.</li>
         <li>Providing Pomodoro functionality.</li>
-        <li>Managing EngineerTube Pro subscriptions.</li>
-        <li>Maintaining and improving extension reliability.</li>
-        <li>Preventing duplicate or incorrect subscription processing.</li>
+        <li>Managing MakeMyTube Pro subscriptions.</li>
+        <li>Maintaining extension reliability.</li>
+        <li>
+          Preventing duplicate or incorrect subscription processing.
+        </li>
       </ul>
 
     </section>
 
 
+
+    <!-- 9 -->
+
     <section>
 
       <h2>
-        8. Data Sharing
+        9. Data Sharing
       </h2>
 
       <p>
-        EngineerTube does <strong>not sell user data</strong>.
+        MakeMyTube does
+        <strong>not sell user data</strong>.
       </p>
 
       <p>
-        EngineerTube does not transfer user data to third parties for
-        advertising, creditworthiness, lending, or unrelated purposes.
+        MakeMyTube does not transfer user data to third parties for
+        advertising profiling, creditworthiness, lending, or unrelated
+        purposes.
       </p>
 
       <p>
-        Information may be processed by service providers only when
-        required to operate EngineerTube, including:
+        Information may be processed by service providers when required
+        to operate MakeMyTube, including:
       </p>
 
       <ul>
+
         <li>
-          <strong>Google</strong> — for Google OAuth authentication.
+          <strong>Google</strong>
+          — for Google OAuth authentication.
         </li>
 
         <li>
-          <strong>Cloudflare</strong> — for backend infrastructure,
-          database services, networking, and security.
+          <strong>Cloudflare</strong>
+          — for backend infrastructure, networking, database or storage
+          services, and security.
         </li>
 
         <li>
-          <strong>Razorpay</strong> — for payment and subscription
-          processing.
+          <strong>Razorpay</strong>
+          — for payment and subscription processing.
         </li>
+
       </ul>
 
       <p>
-        These providers process information according to their own
-        applicable privacy policies and terms.
+        These service providers process information according to their
+        own applicable privacy policies and terms.
       </p>
 
     </section>
 
 
+
+    <!-- 10 -->
+
     <section>
 
       <h2>
-        9. Advertising
+        10. Advertising
       </h2>
 
       <p>
-        EngineerTube does not use your personal information to create
+        MakeMyTube does not use your personal information to create
         advertising profiles and does not sell your information to
         advertisers.
       </p>
 
       <p>
-        EngineerTube may provide features that reduce or hide
-        distracting or advertising-related elements on YouTube, but
-        this does not involve selling or sharing user data for
-        advertising purposes.
+        MakeMyTube may include optional features that attempt to reduce or
+        hide some advertising-related elements or requests on YouTube.
+      </p>
+
+      <p>
+        These features do not involve selling or sharing user information
+        for advertising purposes.
       </p>
 
     </section>
 
 
+
+    <!-- 11 -->
+
     <section>
 
       <h2>
-        10. Remote Code
+        11. Remote Code
       </h2>
 
       <p>
-        EngineerTube does not download or execute remote JavaScript or
-        other remotely hosted executable code as part of the extension.
+        MakeMyTube does not download and execute remotely hosted
+        JavaScript as extension application logic.
       </p>
 
       <p>
-        The extension may communicate with external services such as
-        the EngineerTube backend, Google authentication services, and
-        Razorpay, but executable extension logic is packaged with the
+        The extension may communicate with external services such as the
+        MakeMyTube backend, Google authentication services, Razorpay, and
+        YouTube, but executable extension logic is packaged with the
         Chrome extension.
       </p>
 
     </section>
 
 
+
+    <!-- 12 -->
+
     <section>
 
       <h2>
-        11. Data Retention
+        12. Data Retention
       </h2>
 
       <p>
-        Local learning data remains stored in Chrome extension storage
-        until it is cleared, reset, removed through EngineerTube
+        Data stored in Chrome extension storage may remain there until it
+        is cleared, reset, overwritten, removed through MakeMyTube
         controls, or removed according to Chrome's extension-storage
         behavior.
       </p>
 
       <p>
-        Account and subscription information stored by the EngineerTube
+        Account and subscription information stored through MakeMyTube's
         backend may be retained for as long as reasonably necessary to:
       </p>
 
       <ul>
-        <li>Maintain your EngineerTube account.</li>
+        <li>Maintain account access.</li>
         <li>Provide subscription access.</li>
-        <li>Process subscription cancellation and expiration.</li>
+        <li>Process subscription cancellation.</li>
+        <li>Process subscription expiration.</li>
         <li>Prevent duplicate payment-event processing.</li>
-        <li>Meet applicable operational or legal requirements.</li>
+        <li>
+          Meet applicable operational or legal requirements.
+        </li>
       </ul>
 
     </section>
 
 
+
+    <!-- 13 -->
+
     <section>
 
       <h2>
-        12. User Choices and Data Deletion
+        13. User Choices and Data Deletion
       </h2>
 
       <p>
-        You can remove or reset many types of locally stored
-        EngineerTube information directly through extension controls,
-        including preferences and learned recommendation information.
+        You can change or remove many types of locally stored MakeMyTube
+        information through extension controls.
       </p>
 
       <p>
-        You may also uninstall EngineerTube from Chrome at any time.
+        Depending on available features, this may include preferences,
+        selected tags, blocked tags, saved videos, notes, recommendation
+        information, or other locally stored activity information.
       </p>
 
       <p>
-        To request deletion of EngineerTube account information stored
-        by the backend, contact:
+        You may uninstall MakeMyTube from Chrome at any time.
       </p>
+
+      <p>
+        To request deletion of account information stored by the
+        MakeMyTube backend, contact:
+      </p>
+
 
       <div class="contact">
+
         <strong>
           Email:
         </strong>
@@ -679,24 +920,28 @@
         <a href="mailto:iamvanchit@gmail.com">
           iamvanchit@gmail.com
         </a>
+
       </div>
 
     </section>
 
 
+
+    <!-- 14 -->
+
     <section>
 
       <h2>
-        13. Security
+        14. Security
       </h2>
 
       <p>
-        EngineerTube uses reasonable technical measures designed to
-        protect information handled by the service.
+        MakeMyTube uses reasonable technical measures intended to protect
+        information handled by the service.
       </p>
 
       <p>
-        Examples include:
+        Examples may include:
       </p>
 
       <ul>
@@ -709,39 +954,49 @@
       </ul>
 
       <p>
-        No online system can guarantee absolute security, but
-        EngineerTube is designed to minimize unnecessary collection
-        and exposure of user information.
+        No online system can guarantee absolute security, but MakeMyTube
+        is designed to avoid unnecessary collection and exposure of user
+        information.
       </p>
 
     </section>
 
 
+
+    <!-- 15 -->
+
     <section>
 
       <h2>
-        14. Children's Privacy
+        15. Children's Privacy
       </h2>
 
       <p>
-        EngineerTube is intended as a general productivity and learning
-        tool and is not specifically directed toward children under
-        the minimum age required to independently use Google accounts,
-        payment services, or Chrome services in their jurisdiction.
+        MakeMyTube is a general-purpose browser customization and
+        productivity extension.
+      </p>
+
+      <p>
+        It is not specifically directed toward children under the minimum
+        age required to independently use Google accounts, payment
+        services, or Chrome services in their jurisdiction.
       </p>
 
     </section>
 
 
+
+    <!-- 16 -->
+
     <section>
 
       <h2>
-        15. Third-Party Services
+        16. Third-Party Services
       </h2>
 
       <p>
-        EngineerTube interacts with third-party platforms, including
-        YouTube, Google, Cloudflare, and Razorpay.
+        MakeMyTube interacts with third-party platforms and services,
+        including YouTube, Google, Cloudflare, and Razorpay.
       </p>
 
       <p>
@@ -750,44 +1005,51 @@
       </p>
 
       <p>
-        EngineerTube is an independent browser extension and is not
-        endorsed by or officially affiliated with YouTube or Google
+        MakeMyTube is an independent browser extension and is not
+        affiliated with, endorsed by, or sponsored by YouTube or Google
         unless explicitly stated otherwise.
       </p>
 
     </section>
 
 
+
+    <!-- 17 -->
+
     <section>
 
       <h2>
-        16. Changes to This Privacy Policy
+        17. Changes to This Privacy Policy
       </h2>
 
       <p>
-        This Privacy Policy may be updated when EngineerTube features,
+        This Privacy Policy may be updated if MakeMyTube's features,
         data practices, infrastructure, or legal requirements change.
       </p>
 
       <p>
         Material changes will be reflected by updating the
-        <strong>Last updated</strong> date shown at the top of this
-        page.
+        <strong>Last updated</strong>
+        date displayed at the top of this page.
       </p>
 
     </section>
 
 
+
+    <!-- 18 -->
+
     <section>
 
       <h2>
-        17. Contact
+        18. Contact
       </h2>
 
       <p>
         For privacy questions, data requests, or concerns related to
-        EngineerTube, contact:
+        MakeMyTube, contact:
       </p>
+
 
       <div class="contact">
 
@@ -795,10 +1057,13 @@
           <strong>
             Product:
           </strong>
-          EngineerTube
+
+          MakeMyTube
         </p>
 
+
         <p>
+
           <strong>
             Email:
           </strong>
@@ -806,6 +1071,7 @@
           <a href="mailto:iamvanchit@gmail.com">
             iamvanchit@gmail.com
           </a>
+
         </p>
 
       </div>
@@ -813,10 +1079,13 @@
     </section>
 
 
+
     <footer>
-      © 2026 EngineerTube. All rights reserved.
+      © 2026 MakeMyTube. All rights reserved.
     </footer>
 
+
   </main>
+
 </body>
 </html>
