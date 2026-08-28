@@ -20,10 +20,6 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       margin: 0;
 
@@ -45,25 +41,31 @@
         #050d1a;
 
       color: #dce8f8;
+
       line-height: 1.7;
     }
 
     a {
       color: #66cfff;
+
       word-break: break-word;
     }
 
     .page {
       width: min(920px, calc(100% - 32px));
+
       margin: 0 auto;
+
       padding: 48px 0 80px;
     }
 
     .header {
       margin-bottom: 32px;
+
       padding: 34px;
 
       border: 1px solid #233f65;
+
       border-radius: 18px;
 
       background:
@@ -81,60 +83,28 @@
 
     .brand {
       display: flex;
+
       align-items: center;
-      gap: 14px;
-      margin-bottom: 22px;
+
+      gap: 18px;
+
+      margin-bottom: 24px;
     }
 
-    .logo {
-      width: 54px;
-      height: 54px;
+    .brand-logo {
+      width: 64px;
+      height: 64px;
 
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
+      object-fit: contain;
 
-      gap: 4px;
-
-      padding: 10px 8px;
-
-      border-radius: 14px;
+      border-radius: 15px;
 
       background: #06152c;
 
-      border: 1px solid #145487;
+      border: 1px solid #164675;
 
       box-shadow:
-        0 0 24px rgba(0, 178, 255, 0.2);
-    }
-
-    .logo-bar {
-      width: 8px;
-
-      border-radius: 10px;
-
-      background:
-        linear-gradient(
-          180deg,
-          #29f3ee,
-          #0396ff,
-          #2251ff
-        );
-
-      box-shadow:
-        0 0 8px rgba(0, 210, 255, 0.55);
-    }
-
-    .logo-bar:nth-child(1) {
-      height: 24px;
-    }
-
-    .logo-bar:nth-child(2) {
-      height: 34px;
-    }
-
-    .logo-bar:nth-child(3) {
-      height: 26px;
+        0 0 24px rgba(0, 174, 255, 0.2);
     }
 
     h1 {
@@ -142,7 +112,7 @@
 
       color: #ffffff;
 
-      font-size: 32px;
+      font-size: 34px;
 
       line-height: 1.2;
 
@@ -150,8 +120,11 @@
     }
 
     .subtitle {
-      margin: 5px 0 0;
+      margin: 6px 0 0;
+
       color: #9eb4d1;
+
+      font-size: 16px;
     }
 
     .updated {
@@ -214,6 +187,7 @@
 
     li {
       margin: 8px 0;
+
       color: #b6c7df;
     }
 
@@ -251,8 +225,10 @@
     }
 
     @media (max-width: 640px) {
+
       .page {
         width: min(100% - 20px, 920px);
+
         padding-top: 20px;
       }
 
@@ -264,828 +240,716 @@
       h1 {
         font-size: 27px;
       }
+
+      .brand-logo {
+        width: 54px;
+        height: 54px;
+      }
     }
   </style>
 </head>
 
+
 <body>
 
-  <main class="page">
+<main class="page">
 
 
-    <!-- HEADER -->
+<header class="header">
 
-    <header class="header">
+  <div class="brand">
 
-      <div class="brand">
+    <img
+      src="makemytube-logo.png"
+      alt="MakeMyTube logo"
+      class="brand-logo"
+    />
 
-        <div class="logo">
-          <span class="logo-bar"></span>
-          <span class="logo-bar"></span>
-          <span class="logo-bar"></span>
-        </div>
+    <div>
 
-        <div>
+      <h1>
+        MakeMyTube Privacy Policy
+      </h1>
 
-          <h1>
-            MakeMyTube Privacy Policy
-          </h1>
-
-          <p class="subtitle">
-            Privacy information for the MakeMyTube Chrome Extension.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <p>
-        MakeMyTube is a Chrome extension that gives users more control
-        over their YouTube experience. It can help shape recommendations,
-        reduce unwanted topics, prioritize selected creators, save videos,
-        create notes, track activity, and provide optional productivity
-        and distraction-control features.
+      <p class="subtitle">
+        Privacy information for the MakeMyTube Chrome Extension.
       </p>
 
-      <p>
-        This Privacy Policy explains what information MakeMyTube accesses,
-        how that information is used, where it may be stored, which
-        third-party services are involved, and the choices available to
-        users.
-      </p>
-
-
-      <span class="updated">
-        Last updated: August 28, 2026
-      </span>
-
-    </header>
-
-
-
-    <!-- 1 -->
-
-    <section>
-
-      <h2>
-        1. Information We Access and Process
-      </h2>
-
-      <p>
-        MakeMyTube accesses and processes information only when it is
-        needed to provide extension functionality, authentication,
-        personalization, productivity tools, or subscription services.
-      </p>
-
-
-      <h3>
-        Google Account Information
-      </h3>
-
-      <p>
-        When you choose to sign in with Google, MakeMyTube may receive
-        basic account information provided through Google OAuth,
-        including:
-      </p>
-
-      <ul>
-        <li>Your Google account identifier.</li>
-        <li>Your name.</li>
-        <li>Your email address.</li>
-        <li>Your Google profile picture, when available.</li>
-      </ul>
-
-      <p>
-        MakeMyTube requests only the basic Google identity scopes:
-        <strong>openid</strong>,
-        <strong>email</strong>,
-        and
-        <strong>profile</strong>.
-      </p>
-
-      <p>
-        This information is used to authenticate you, display your
-        signed-in account, and associate your account with MakeMyTube Pro
-        subscription access when applicable.
-      </p>
-
-
-      <h3>
-        YouTube Page and Activity Information
-      </h3>
-
-      <p>
-        MakeMyTube processes information available on YouTube pages so
-        that features such as recommendation filtering, saved videos,
-        notes, progress tracking, trusted channels, and interface controls
-        can function.
-      </p>
-
-      <p>
-        Depending on the features you use, this may include:
-      </p>
-
-      <ul>
-        <li>Video titles.</li>
-        <li>Video identifiers.</li>
-        <li>Channel names.</li>
-        <li>Video URLs.</li>
-        <li>Video duration.</li>
-        <li>Playback progress.</li>
-        <li>Watch time.</li>
-        <li>Focus Mode and Normal Mode activity.</li>
-        <li>Saved videos.</li>
-        <li>Timestamped notes created by you.</li>
-        <li>Interest or study tags.</li>
-        <li>Blocked tags.</li>
-        <li>Trusted-channel preferences.</li>
-        <li>Pomodoro session information.</li>
-        <li>Progress and productivity statistics.</li>
-        <li>
-          Interactions required to operate MakeMyTube features.
-        </li>
-      </ul>
+    </div>
+
+  </div>
+
+
+  <p>
+    MakeMyTube is a Chrome extension that gives users more control over
+    their YouTube experience.
+  </p>
+
+  <p>
+    MakeMyTube can help shape recommendations, reduce unwanted topics,
+    prioritize selected creators, save videos, create notes, track
+    activity, and provide optional productivity and distraction-control
+    features.
+  </p>
 
-      <p>
-        This information is used only for MakeMyTube functionality and
-        personalization.
-      </p>
+  <p>
+    This Privacy Policy explains what information MakeMyTube accesses,
+    how that information is used, where it may be stored, which
+    third-party services are involved, and the choices available to
+    users.
+  </p>
+
+
+  <span class="updated">
+    Last updated: August 28, 2026
+  </span>
+
+</header>
+
+
+
+<section>
+
+  <h2>
+    1. Information We Access and Process
+  </h2>
+
+  <p>
+    MakeMyTube accesses and processes information only when needed to
+    provide extension functionality, authentication, personalization,
+    productivity tools, and subscription services.
+  </p>
+
+
+  <h3>
+    Google Account Information
+  </h3>
+
+  <p>
+    When you choose to sign in with Google, MakeMyTube may receive:
+  </p>
+
+  <ul>
+    <li>Your Google account identifier.</li>
+    <li>Your name.</li>
+    <li>Your email address.</li>
+    <li>Your Google profile picture, when available.</li>
+  </ul>
+
+  <p>
+    MakeMyTube requests only the Google identity scopes:
+    <strong>openid</strong>,
+    <strong>email</strong>,
+    and
+    <strong>profile</strong>.
+  </p>
+
+  <p>
+    This information is used to authenticate you, display your account,
+    and associate your account with MakeMyTube Pro access where
+    applicable.
+  </p>
+
+
+  <h3>
+    YouTube Page and Activity Information
+  </h3>
+
+  <p>
+    MakeMyTube processes information available on YouTube pages so that
+    recommendation filtering, saved-video tools, notes, trusted channels,
+    progress tracking, and interface controls can operate.
+  </p>
+
+  <p>
+    Depending on the features you use, this information may include:
+  </p>
 
-    </section>
+  <ul>
+    <li>Video titles.</li>
+    <li>Video identifiers.</li>
+    <li>Video URLs.</li>
+    <li>Channel names.</li>
+    <li>Video duration.</li>
+    <li>Playback progress.</li>
+    <li>Watch time.</li>
+    <li>Focus Mode activity.</li>
+    <li>Normal Mode activity.</li>
+    <li>Saved videos.</li>
+    <li>Timestamped notes.</li>
+    <li>Selected tags.</li>
+    <li>Blocked tags.</li>
+    <li>Trusted-channel preferences.</li>
+    <li>Pomodoro session information.</li>
+    <li>Progress information.</li>
+    <li>Productivity statistics.</li>
+  </ul>
 
+</section>
 
 
-    <!-- 2 -->
 
-    <section>
+<section>
 
-      <h2>
-        2. Information Stored in Browser Storage
-      </h2>
+  <h2>
+    2. Information Stored in Browser Storage
+  </h2>
 
-      <p>
-        A significant portion of MakeMyTube preferences and activity data
-        is stored using Chrome extension storage.
-      </p>
+  <p>
+    A significant portion of MakeMyTube data is stored using Chrome
+    extension storage.
+  </p>
 
-      <p>
-        This may include:
-      </p>
+  <p>
+    This may include:
+  </p>
 
-      <ul>
-        <li>MakeMyTube settings.</li>
-        <li>Recommendation mode preferences.</li>
-        <li>Interest or study tags.</li>
-        <li>Blocked tags.</li>
-        <li>Trusted channels.</li>
-        <li>Saved videos.</li>
-        <li>Timestamped notes.</li>
-        <li>Pomodoro settings and statistics.</li>
-        <li>Watch-time statistics.</li>
-        <li>Progress information.</li>
-        <li>Recommendation preferences.</li>
-        <li>
-          Subscription status cached for the extension interface.
-        </li>
-      </ul>
+  <ul>
+    <li>MakeMyTube settings.</li>
+    <li>Recommendation preferences.</li>
+    <li>Selected tags.</li>
+    <li>Blocked tags.</li>
+    <li>Trusted channels.</li>
+    <li>Saved videos.</li>
+    <li>Timestamped notes.</li>
+    <li>Pomodoro information.</li>
+    <li>Watch-time statistics.</li>
+    <li>Progress information.</li>
+    <li>Subscription status cached for the interface.</li>
+  </ul>
 
-      <p>
-        This information helps MakeMyTube remember your preferences and
-        maintain your experience across browser sessions.
-      </p>
+  <p>
+    This information allows MakeMyTube to remember your preferences
+    across browser sessions.
+  </p>
 
-    </section>
+</section>
 
 
 
-    <!-- 3 -->
+<section>
 
-    <section>
+  <h2>
+    3. Local Import and Export
+  </h2>
 
-      <h2>
-        3. Local Import and Export
-      </h2>
+  <p>
+    MakeMyTube may allow users to manually export supported video,
+    progress, notes, or related extension information to a local JSON
+    file.
+  </p>
 
-      <p>
-        MakeMyTube may allow you to manually export certain supported
-        information, such as saved-video records or progress information,
-        into a file stored on your device.
-      </p>
+  <p>
+    Compatible backup files can later be imported to restore supported
+    information after reinstalling the extension or moving to another
+    supported browser environment.
+  </p>
 
-      <p>
-        You may later import a compatible MakeMyTube backup file to
-        restore supported information after reinstalling the extension or
-        moving to another supported browser environment.
-      </p>
 
-      <div class="notice">
+  <div class="notice">
 
-        <strong>
-          Exported backup files are created only when you choose to export
-          them.
-        </strong>
+    <strong>
+      MakeMyTube does not automatically upload exported backup files to a
+      cloud storage service.
+    </strong>
 
-        MakeMyTube does not automatically upload those exported files to
-        a cloud storage service.
+  </div>
 
-      </div>
+  <p>
+    Users are responsible for protecting backup files stored on their
+    devices.
+  </p>
 
-      <p>
-        You are responsible for protecting any backup files that you
-        create and store locally.
-      </p>
+</section>
 
-    </section>
 
 
+<section>
 
-    <!-- 4 -->
+  <h2>
+    4. MakeMyTube Backend
+  </h2>
 
-    <section>
+  <p>
+    MakeMyTube uses backend infrastructure hosted using
+    <strong>Cloudflare Workers</strong>
+    and related Cloudflare services.
+  </p>
 
-      <h2>
-        4. MakeMyTube Backend
-      </h2>
+  <p>
+    Backend information may include:
+  </p>
 
-      <p>
-        MakeMyTube uses backend infrastructure hosted using
-        <strong>Cloudflare Workers</strong>
-        and related Cloudflare services for authentication and
-        subscription management.
-      </p>
+  <ul>
+    <li>Google account identifier.</li>
+    <li>Email address.</li>
+    <li>Name.</li>
+    <li>Profile picture URL when available.</li>
+    <li>MakeMyTube subscription plan.</li>
+    <li>Subscription status.</li>
+    <li>Subscription start information.</li>
+    <li>Subscription expiry information.</li>
+    <li>Razorpay subscription identifiers.</li>
+    <li>Payment or subscription event identifiers.</li>
+  </ul>
 
-      <p>
-        The backend may process or store information such as:
-      </p>
+  <p>
+    This information is used for authentication and subscription
+    management.
+  </p>
 
-      <ul>
-        <li>Your Google account identifier.</li>
-        <li>Your email address.</li>
-        <li>Your name.</li>
-        <li>Your profile picture URL, when available.</li>
-        <li>Your MakeMyTube subscription plan.</li>
-        <li>Your subscription status.</li>
-        <li>Your subscription start information.</li>
-        <li>Your subscription expiry information.</li>
-        <li>Razorpay subscription identifiers.</li>
-        <li>
-          Payment or subscription event identifiers needed to manage
-          subscription events.
-        </li>
-      </ul>
+</section>
 
-      <p>
-        This information is used to authenticate users and manage
-        MakeMyTube account and subscription access.
-      </p>
 
-    </section>
 
+<section>
 
+  <h2>
+    5. Payments and Razorpay
+  </h2>
 
-    <!-- 5 -->
+  <p>
+    MakeMyTube Pro payments are processed using
+    <strong>Razorpay</strong>.
+  </p>
 
-    <section>
+  <p>
+    Users may be redirected to Razorpay's payment interface when
+    purchasing MakeMyTube Pro.
+  </p>
 
-      <h2>
-        5. Payments and Razorpay
-      </h2>
 
-      <p>
-        MakeMyTube Pro subscriptions are processed using
-        <strong>Razorpay</strong>.
-      </p>
+  <div class="notice">
 
-      <p>
-        When you choose to purchase MakeMyTube Pro, you may be redirected
-        to Razorpay's payment interface.
-      </p>
+    <strong>
+      MakeMyTube does not directly collect or store credit card numbers,
+      debit card numbers, CVVs, UPI PINs, banking passwords, or similar
+      sensitive payment credentials.
+    </strong>
 
+  </div>
 
-      <div class="notice">
 
-        <strong>
-          MakeMyTube does not directly collect or store your credit card
-          number, debit card number, UPI PIN, CVV, banking password, or
-          similar sensitive payment credentials.
-        </strong>
+  <p>
+    Razorpay processes payment information according to its own privacy
+    and security practices.
+  </p>
 
-      </div>
+  <p>
+    MakeMyTube receives only information needed to manage subscription
+    status and billing periods.
+  </p>
 
+</section>
 
-      <p>
-        Razorpay processes payment information according to its own
-        privacy and security practices.
-      </p>
 
-      <p>
-        MakeMyTube receives only information needed to determine and
-        maintain subscription status, which may include Razorpay
-        subscription identifiers, payment or subscription status, and
-        billing-period information.
-      </p>
 
-    </section>
+<section>
 
+  <h2>
+    6. Google Sign-In
+  </h2>
 
+  <p>
+    MakeMyTube uses Google OAuth for authentication.
+  </p>
 
-    <!-- 6 -->
+  <p>
+    Google Sign-In is used to:
+  </p>
 
-    <section>
+  <ul>
+    <li>Verify your identity.</li>
+    <li>Create or identify your MakeMyTube account.</li>
+    <li>Display basic account information.</li>
+    <li>Associate your account with MakeMyTube Pro access.</li>
+  </ul>
 
-      <h2>
-        6. Google Sign-In
-      </h2>
+  <p>
+    MakeMyTube does not request access to Gmail, Google Drive,
+    Google Calendar, Google Contacts, or unrelated Google account
+    content.
+  </p>
 
-      <p>
-        MakeMyTube uses Google OAuth for authentication.
-      </p>
+</section>
 
-      <p>
-        Google Sign-In is used to:
-      </p>
 
-      <ul>
-        <li>Verify your identity.</li>
-        <li>Create or identify your MakeMyTube account.</li>
-        <li>
-          Display basic account information inside the extension.
-        </li>
-        <li>
-          Associate your account with MakeMyTube Pro access when
-          applicable.
-        </li>
-      </ul>
 
-      <p>
-        MakeMyTube does not request access to Gmail, Google Drive,
-        Google Calendar, Google Contacts, or other unrelated Google
-        account content.
-      </p>
+<section>
 
-    </section>
+  <h2>
+    7. Chrome Extension Permissions
+  </h2>
 
 
+  <h3>
+    Storage
+  </h3>
 
-    <!-- 7 -->
+  <p>
+    Used to store extension preferences, selected tags, saved videos,
+    notes, progress information, Pomodoro data, and account state.
+  </p>
 
-    <section>
 
-      <h2>
-        7. Chrome Extension Permissions
-      </h2>
+  <h3>
+    Identity
+  </h3>
 
-      <p>
-        MakeMyTube requests Chrome permissions needed to provide its
-        extension functionality.
-      </p>
+  <p>
+    Used for Google authentication.
+  </p>
 
 
-      <h3>
-        Storage
-      </h3>
+  <h3>
+    Alarms
+  </h3>
 
-      <p>
-        Used to save MakeMyTube preferences, selected tags, saved videos,
-        notes, progress information, Pomodoro data, and account or
-        subscription state.
-      </p>
+  <p>
+    Used for Pomodoro timers and related timed functionality.
+  </p>
 
 
-      <h3>
-        Identity
-      </h3>
+  <h3>
+    Declarative Net Request
+  </h3>
 
-      <p>
-        Used to support Google Sign-In and authentication.
-      </p>
+  <p>
+    Used by MakeMyTube's optional advertisement-reduction functionality
+    through packaged browser rules.
+  </p>
 
 
-      <h3>
-        Alarms
-      </h3>
+  <h3>
+    YouTube Host Access
+  </h3>
 
-      <p>
-        Used to support Pomodoro focus and break timers even when the
-        extension popup is closed.
-      </p>
+  <p>
+    Used to provide recommendation filtering, saved-video tools,
+    interface controls, notes, progress tracking, trusted-channel
+    functionality, and other MakeMyTube features.
+  </p>
 
 
-      <h3>
-        Declarative Net Request
-      </h3>
+  <h3>
+    Backend Access
+  </h3>
 
-      <p>
-        Used for MakeMyTube's optional advertisement-reduction
-        functionality through packaged browser rules.
-      </p>
+  <p>
+    Used for authentication and MakeMyTube Pro subscription management.
+  </p>
 
+</section>
 
-      <h3>
-        YouTube Host Access
-      </h3>
 
-      <p>
-        MakeMyTube needs access to YouTube pages so that it can provide
-        recommendation filtering, interface customization, saved-video
-        tools, notes, progress tracking, trusted-channel features,
-        distraction controls, and related functionality.
-      </p>
 
+<section>
 
-      <h3>
-        MakeMyTube Backend Access
-      </h3>
+  <h2>
+    8. How We Use Information
+  </h2>
 
-      <p>
-        Access to the MakeMyTube backend is used for authentication and
-        subscription management.
-      </p>
+  <ul>
+    <li>Authenticating users.</li>
+    <li>Providing recommendation modes.</li>
+    <li>Filtering content according to user preferences.</li>
+    <li>Applying blocked tags.</li>
+    <li>Prioritizing trusted channels.</li>
+    <li>Saving user settings.</li>
+    <li>Providing saved-video tools.</li>
+    <li>Providing timestamped notes.</li>
+    <li>Tracking supported activity and progress.</li>
+    <li>Providing Pomodoro functionality.</li>
+    <li>Managing MakeMyTube Pro subscriptions.</li>
+    <li>Maintaining extension reliability.</li>
+  </ul>
 
-    </section>
+</section>
 
 
 
-    <!-- 8 -->
+<section>
 
-    <section>
+  <h2>
+    9. Data Sharing
+  </h2>
 
-      <h2>
-        8. How We Use Information
-      </h2>
+  <p>
+    MakeMyTube
+    <strong>does not sell user data</strong>.
+  </p>
 
-      <p>
-        Information accessed by MakeMyTube is used only for purposes
-        connected to extension functionality, including:
-      </p>
+  <p>
+    MakeMyTube does not share user information for advertising profiling,
+    lending, or unrelated purposes.
+  </p>
 
-      <ul>
-        <li>Authenticating users.</li>
-        <li>Providing recommendation modes.</li>
-        <li>Filtering content according to user-selected preferences.</li>
-        <li>Applying blocked tags.</li>
-        <li>Prioritizing trusted channels.</li>
-        <li>Saving user preferences.</li>
-        <li>Providing saved-video functionality.</li>
-        <li>Providing timestamped notes.</li>
-        <li>Tracking supported progress and usage information.</li>
-        <li>Providing Pomodoro functionality.</li>
-        <li>Managing MakeMyTube Pro subscriptions.</li>
-        <li>Maintaining extension reliability.</li>
-        <li>
-          Preventing duplicate or incorrect subscription processing.
-        </li>
-      </ul>
+  <p>
+    Information may be processed by:
+  </p>
 
-    </section>
+  <ul>
+    <li>
+      <strong>Google</strong>
+      — for Google OAuth authentication.
+    </li>
 
+    <li>
+      <strong>Cloudflare</strong>
+      — for backend infrastructure and security.
+    </li>
 
+    <li>
+      <strong>Razorpay</strong>
+      — for payment and subscription processing.
+    </li>
+  </ul>
 
-    <!-- 9 -->
+</section>
 
-    <section>
 
-      <h2>
-        9. Data Sharing
-      </h2>
 
-      <p>
-        MakeMyTube does
-        <strong>not sell user data</strong>.
-      </p>
+<section>
 
-      <p>
-        MakeMyTube does not transfer user data to third parties for
-        advertising profiling, creditworthiness, lending, or unrelated
-        purposes.
-      </p>
+  <h2>
+    10. Advertising
+  </h2>
 
-      <p>
-        Information may be processed by service providers when required
-        to operate MakeMyTube, including:
-      </p>
+  <p>
+    MakeMyTube does not use personal information to build advertising
+    profiles.
+  </p>
 
-      <ul>
+  <p>
+    MakeMyTube may provide optional features designed to reduce certain
+    advertising-related elements or requests on YouTube.
+  </p>
 
-        <li>
-          <strong>Google</strong>
-          — for Google OAuth authentication.
-        </li>
+  <p>
+    These features do not involve selling or sharing personal
+    information with advertisers.
+  </p>
 
-        <li>
-          <strong>Cloudflare</strong>
-          — for backend infrastructure, networking, database or storage
-          services, and security.
-        </li>
+</section>
 
-        <li>
-          <strong>Razorpay</strong>
-          — for payment and subscription processing.
-        </li>
 
-      </ul>
 
-      <p>
-        These service providers process information according to their
-        own applicable privacy policies and terms.
-      </p>
+<section>
 
-    </section>
+  <h2>
+    11. Remote Code
+  </h2>
 
+  <p>
+    MakeMyTube does not download and execute remotely hosted JavaScript
+    as extension application logic.
+  </p>
 
+  <p>
+    Extension logic is packaged with the Chrome extension.
+  </p>
 
-    <!-- 10 -->
+</section>
 
-    <section>
 
-      <h2>
-        10. Advertising
-      </h2>
 
-      <p>
-        MakeMyTube does not use your personal information to create
-        advertising profiles and does not sell your information to
-        advertisers.
-      </p>
+<section>
 
-      <p>
-        MakeMyTube may include optional features that attempt to reduce or
-        hide some advertising-related elements or requests on YouTube.
-      </p>
+  <h2>
+    12. Data Retention
+  </h2>
 
-      <p>
-        These features do not involve selling or sharing user information
-        for advertising purposes.
-      </p>
+  <p>
+    Information stored in Chrome extension storage may remain until it is
+    cleared, reset, overwritten, removed through MakeMyTube controls, or
+    removed according to Chrome's extension-storage behavior.
+  </p>
 
-    </section>
+  <p>
+    Account and subscription information may be retained as reasonably
+    necessary to:
+  </p>
 
+  <ul>
+    <li>Maintain account access.</li>
+    <li>Provide subscription access.</li>
+    <li>Process cancellations.</li>
+    <li>Process subscription expiration.</li>
+    <li>Prevent duplicate payment processing.</li>
+    <li>Meet operational or legal requirements.</li>
+  </ul>
 
+</section>
 
-    <!-- 11 -->
 
-    <section>
 
-      <h2>
-        11. Remote Code
-      </h2>
+<section>
 
-      <p>
-        MakeMyTube does not download and execute remotely hosted
-        JavaScript as extension application logic.
-      </p>
+  <h2>
+    13. User Choices and Data Deletion
+  </h2>
 
-      <p>
-        The extension may communicate with external services such as the
-        MakeMyTube backend, Google authentication services, Razorpay, and
-        YouTube, but executable extension logic is packaged with the
-        Chrome extension.
-      </p>
+  <p>
+    Users can remove many types of locally stored MakeMyTube information
+    through extension controls.
+  </p>
 
-    </section>
+  <p>
+    Users may also uninstall MakeMyTube at any time.
+  </p>
 
+  <p>
+    To request deletion of MakeMyTube account information stored by the
+    backend, contact:
+  </p>
 
 
-    <!-- 12 -->
+  <div class="contact">
 
-    <section>
+    <strong>Email:</strong>
 
-      <h2>
-        12. Data Retention
-      </h2>
+    <a href="mailto:iamvanchit@gmail.com">
+      iamvanchit@gmail.com
+    </a>
 
-      <p>
-        Data stored in Chrome extension storage may remain there until it
-        is cleared, reset, overwritten, removed through MakeMyTube
-        controls, or removed according to Chrome's extension-storage
-        behavior.
-      </p>
+  </div>
 
-      <p>
-        Account and subscription information stored through MakeMyTube's
-        backend may be retained for as long as reasonably necessary to:
-      </p>
+</section>
 
-      <ul>
-        <li>Maintain account access.</li>
-        <li>Provide subscription access.</li>
-        <li>Process subscription cancellation.</li>
-        <li>Process subscription expiration.</li>
-        <li>Prevent duplicate payment-event processing.</li>
-        <li>
-          Meet applicable operational or legal requirements.
-        </li>
-      </ul>
 
-    </section>
 
+<section>
 
+  <h2>
+    14. Security
+  </h2>
 
-    <!-- 13 -->
+  <p>
+    MakeMyTube uses reasonable technical measures intended to protect
+    information handled by the service.
+  </p>
 
-    <section>
+  <ul>
+    <li>HTTPS communication.</li>
+    <li>Google OAuth authentication.</li>
+    <li>Server-side payment credentials.</li>
+    <li>Razorpay webhook verification.</li>
+    <li>Restricted extension host permissions.</li>
+    <li>Server-side subscription verification.</li>
+  </ul>
 
-      <h2>
-        13. User Choices and Data Deletion
-      </h2>
+  <p>
+    No online service can guarantee absolute security.
+  </p>
 
-      <p>
-        You can change or remove many types of locally stored MakeMyTube
-        information through extension controls.
-      </p>
+</section>
 
-      <p>
-        Depending on available features, this may include preferences,
-        selected tags, blocked tags, saved videos, notes, recommendation
-        information, or other locally stored activity information.
-      </p>
 
-      <p>
-        You may uninstall MakeMyTube from Chrome at any time.
-      </p>
 
-      <p>
-        To request deletion of account information stored by the
-        MakeMyTube backend, contact:
-      </p>
+<section>
 
+  <h2>
+    15. Children's Privacy
+  </h2>
 
-      <div class="contact">
+  <p>
+    MakeMyTube is a general-purpose browser customization and
+    productivity extension.
+  </p>
 
-        <strong>
-          Email:
-        </strong>
+  <p>
+    It is not specifically directed toward children below the minimum
+    age required to independently use Google accounts, payment services,
+    or Chrome services in their jurisdiction.
+  </p>
 
-        <a href="mailto:iamvanchit@gmail.com">
-          iamvanchit@gmail.com
-        </a>
+</section>
 
-      </div>
 
-    </section>
 
+<section>
 
+  <h2>
+    16. Third-Party Services
+  </h2>
 
-    <!-- 14 -->
+  <p>
+    MakeMyTube interacts with YouTube, Google, Cloudflare, and Razorpay.
+  </p>
 
-    <section>
+  <p>
+    Use of these services may also be subject to their own privacy
+    policies and terms.
+  </p>
 
-      <h2>
-        14. Security
-      </h2>
+  <p>
+    MakeMyTube is an independent Chrome extension and is not affiliated
+    with, endorsed by, or sponsored by YouTube or Google.
+  </p>
 
-      <p>
-        MakeMyTube uses reasonable technical measures intended to protect
-        information handled by the service.
-      </p>
+</section>
 
-      <p>
-        Examples may include:
-      </p>
 
-      <ul>
-        <li>HTTPS communication.</li>
-        <li>Google OAuth authentication.</li>
-        <li>Server-side payment API credentials.</li>
-        <li>Razorpay webhook signature verification.</li>
-        <li>Restricted Chrome extension host permissions.</li>
-        <li>Server-side subscription verification.</li>
-      </ul>
 
-      <p>
-        No online system can guarantee absolute security, but MakeMyTube
-        is designed to avoid unnecessary collection and exposure of user
-        information.
-      </p>
+<section>
 
-    </section>
+  <h2>
+    17. Changes to This Privacy Policy
+  </h2>
 
+  <p>
+    This Privacy Policy may be updated when MakeMyTube features,
+    infrastructure, data practices, or legal requirements change.
+  </p>
 
+  <p>
+    Material changes will be reflected by updating the
+    <strong>Last updated</strong>
+    date shown above.
+  </p>
 
-    <!-- 15 -->
+</section>
 
-    <section>
 
-      <h2>
-        15. Children's Privacy
-      </h2>
 
-      <p>
-        MakeMyTube is a general-purpose browser customization and
-        productivity extension.
-      </p>
+<section>
 
-      <p>
-        It is not specifically directed toward children under the minimum
-        age required to independently use Google accounts, payment
-        services, or Chrome services in their jurisdiction.
-      </p>
+  <h2>
+    18. Contact
+  </h2>
 
-    </section>
+  <p>
+    For privacy questions or data requests related to MakeMyTube:
+  </p>
 
 
+  <div class="contact">
 
-    <!-- 16 -->
+    <p>
+      <strong>Product:</strong>
+      MakeMyTube
+    </p>
 
-    <section>
+    <p>
 
-      <h2>
-        16. Third-Party Services
-      </h2>
+      <strong>Email:</strong>
 
-      <p>
-        MakeMyTube interacts with third-party platforms and services,
-        including YouTube, Google, Cloudflare, and Razorpay.
-      </p>
+      <a href="mailto:iamvanchit@gmail.com">
+        iamvanchit@gmail.com
+      </a>
 
-      <p>
-        Use of those services may also be governed by their respective
-        privacy policies and terms.
-      </p>
+    </p>
 
-      <p>
-        MakeMyTube is an independent browser extension and is not
-        affiliated with, endorsed by, or sponsored by YouTube or Google
-        unless explicitly stated otherwise.
-      </p>
+  </div>
 
-    </section>
+</section>
 
 
+<footer>
+  © 2026 MakeMyTube. All rights reserved.
+</footer>
 
-    <!-- 17 -->
-
-    <section>
-
-      <h2>
-        17. Changes to This Privacy Policy
-      </h2>
-
-      <p>
-        This Privacy Policy may be updated if MakeMyTube's features,
-        data practices, infrastructure, or legal requirements change.
-      </p>
-
-      <p>
-        Material changes will be reflected by updating the
-        <strong>Last updated</strong>
-        date displayed at the top of this page.
-      </p>
-
-    </section>
-
-
-
-    <!-- 18 -->
-
-    <section>
-
-      <h2>
-        18. Contact
-      </h2>
-
-      <p>
-        For privacy questions, data requests, or concerns related to
-        MakeMyTube, contact:
-      </p>
-
-
-      <div class="contact">
-
-        <p>
-          <strong>
-            Product:
-          </strong>
-
-          MakeMyTube
-        </p>
-
-
-        <p>
-
-          <strong>
-            Email:
-          </strong>
-
-          <a href="mailto:iamvanchit@gmail.com">
-            iamvanchit@gmail.com
-          </a>
-
-        </p>
-
-      </div>
-
-    </section>
-
-
-
-    <footer>
-      © 2026 MakeMyTube. All rights reserved.
-    </footer>
-
-
-  </main>
+</main>
 
 </body>
 </html>
